@@ -86,7 +86,7 @@ const Home = () => {
         <main><section><ReactLoading
         type={"bubbles"}
         color={theme==="Light"? "cyan":"#ca1271"}
-        height={400}
+        height={500}
         width={400}
       /></section></main>
         <Footer/>
