@@ -1,0 +1,219 @@
+/* ==========================
+========== +addeers + =========
+=============================*/
+
+main .address-task{
+  display: flex;
+   align-items: center;
+   gap: 5px;
+   margin-bottom: 50px;
+}
+main .address-task input{
+  width: 250px;
+  height: 60px;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+outline: none;
+color: black;
+}
+main .address-task .fa-pen-to-square{
+  font-size: 22px;
+  cursor: pointer;
+  transition: .3s;
+  color: black;
+}
+main .address-task .fa-pen-to-square:hover{
+  font-size: 25px;
+  transition: .3s;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================
+========== + details + =========
+=============================*/
+main .details-task {
+  width: 50%;
+  margin-top: -15%;
+
+}
+main .up-details{
+  font-size: .8rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+}
+main .up-details .com{
+  font-size: 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 4px;
+color: black;
+
+}
+main .up-details .com input {
+  width: 1.1rem;
+  
+}
+main .up-details .com div , main .up-details .created-time{
+color: black;
+}
+/* ======================== */
+main  .sub-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 0 15px;
+  background-color: rgb(65,71,84);
+  border-radius: 5px;
+  box-shadow: 0 5px 30px 0 rgb(0 0 0 /15%);
+  cursor: pointer;
+  transition: .3s;
+  margin: 8px 0;
+  width: 100%;
+}
+main  .sub-details:hover{
+  transform: scale(1.01);
+  transition: .1s;
+}
+main  .sub-details .fa-trash:hover{
+color: red;
+transition: .3s;
+}
+
+
+
+
+
+
+
+/* ==========================
+========== + edit-btn + =========
+=============================*/
+
+main .edit-btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+height: 150px;
+}
+main .edit-btn button{
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 2px;
+}
+main .details-task .add{
+  margin-top: -100%;
+  background-color: rgb(22, 204, 204);
+  border: none;;
+  outline: none;
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 2px;
+  margin-top: 30px;
+}
+main .edit-btn .delete{
+
+  background-color:red;
+  border: none;
+  outline: none;
+}
+
+
+main .add-details{
+    display: flex;
+gap: 5px;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 10px 25px;
+  background-color: rgb(65,71,84);
+  border-radius: 5px;
+  box-shadow: 0 5px 30px 0 rgb(0 0 0 /15%);
+  cursor: pointer;
+  transition: .3s;
+  margin: 8px 0;
+animation: show .7s 1;
+}
+@keyframes show {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+
+
+  100% {
+    transform: scale(1);
+  }
+}
+main .add-details input{
+  border: none;
+  color: #000;
+  width: 180px;
+  height: 25px;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+  font-weight: 600;
+}
+main .add-details button{
+  padding:5px 10px;
+  background-color: rgb(22, 204, 204);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+========== + Dark + =========
+=============================*/
+.Dark main .address-task input , .Dark main .address-task .fa-pen-to-square{
+  color: #fff;
+}
+.Dark .up-details .com div ,.Dark  main .up-details .created-time{
+  color: #fff;
+  }
+  
+  .Dark main .edit-btn .add{
+    background-color: #ca1271;
+    border: none;
+  }
+  .Dark main .add-details button , .Dark main .details-task .add{
+    background-color: #ca1271;
+  }
+ @media(width<900px){
+  main .details-task{
+    width: 99%;
+  }
+ }

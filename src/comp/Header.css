@@ -1,0 +1,86 @@
+.myheader .ali {
+  background-color: teal;
+}
+
+
+.hide-when-mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ==================
+    3. header of mobile
+===================== */
+.show-when-mobile {
+  display: none;
+}
+
+
+
+.main-list .lan{
+  position: relative;
+}
+.main-list .lan:hover ul{
+  display: block;
+}
+.main-list .lan ul{
+  position: absolute;
+  background-color:teal ;
+  color: #fff;
+  display: none;
+  top: 30px;
+  z-index: 999999;
+  border-radius: 10px;
+}
+.main-list .lan ul li{
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  transition: .5s;
+  border-radius: 10px;
+}
+.main-list .lan ul li:hover{
+  background-color: rgb(8, 196, 196);
+  transition: .5s;
+}
+.main-list .lan ul li:nth-child(1){
+  border-bottom: 2px solid #000;
+}
+.main-list .lan ul li p{
+  color: #fff;
+}
+
+.Dark .main-list .lan ul{
+  background-color: #9e4673;
+}
+.Dark .main-list .lan ul li:hover{
+  background-color: #f770b6;
+}
+.main-list > button{
+  all: unset;
+color: #00ffff;
+background-color: transparent;
+box-shadow: 0 0 5px cyan;
+border: none;
+border-radius: 5px;
+font-size: 15px;
+padding: 8px 14px;
+}
+.headerul{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media(width<450px){
+  .main-list .lan ul{
+    left: -120px;
+    top: 70px;
+  }
+}
+.Dark .main-list > button{
+  color: #fff;
+  box-shadow: 0 0 5px #fff;
+}

@@ -1,0 +1,35 @@
+main{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  margin: 0 auto;
+  gap:15px;
+}
+main .email , main .user , main .create , main .last{
+color:#000
+}
+.Dark  main .email,.Dark main .user , .Dark main .create ,.Dark main .last  {
+color:#fff;
+}
+main button.del{
+font-size:1.3rem;
+width:10rem;
+height:2rem;
+
+background-color:red;
+border:2px solid red;
+
+}
+button:active{
+scale: .9;
+}
+.Light .date{
+color:#000
+}
+@media(width<500px){
+main{
+justify-content: center;
+align-items: center;
+}
+}

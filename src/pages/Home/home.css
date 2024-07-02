@@ -1,0 +1,332 @@
+.Dark .wait {
+  color: #9e4673;
+}
+.Light .wait {
+  color: teal;
+}
+.wait {
+  text-decoration: underline;
+}
+.welcome {
+  color: #000;
+}
+.Dark .welcome {
+  color: #fff;
+}
+p {
+  color: #000;
+}
+.Dark p {
+  color: #fff;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  --s: 25px;
+  --g: 5px;
+
+  width: calc(2 * (1.353 * var(--s) + var(--g)));
+
+  background: linear-gradient(#ff1818 0 0) left/50% 100% no-repeat,
+    conic-gradient(
+      from -90deg at var(--s) calc(0.353 * var(--s)),
+      #fff 135deg,
+      #666 0 270deg,
+      #aaa 0
+    );
+  background-blend-mode: multiply;
+  --_m: linear-gradient(
+      to bottom right,
+      #0000 calc(0.25 * var(--s)),
+      #000 0 calc(100% - calc(0.25 * var(--s)) - 1.414 * var(--g)),
+      #0000 0
+    ),
+    conic-gradient(
+      from -90deg at right var(--g) bottom var(--g),
+      #000 90deg,
+      #0000 0
+    );
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  background-size: 50% 50%;
+  -webkit-mask-size: 50% 50%;
+  mask-size: 50% 50%;
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+  animation: l9 1.5s infinite;
+}
+@keyframes l9 {
+  0%,
+  12.5% {
+    background-position: 0% 0%, 0 0;
+  }
+  12.6%,
+  37.5% {
+    background-position: 100% 0%, 0 0;
+  }
+  37.6%,
+  62.5% {
+    background-position: 100% 100%, 0 0;
+  }
+  62.6%,
+  87.5% {
+    background-position: 0% 100%, 0 0;
+  }
+  87.6%,
+  100% {
+    background-position: 0% 0%, 0 0;
+  }
+}
+main h2 {
+  color: #000;
+}
+.Dark main h2 {
+  color: #fff;
+}
+main.flex {
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+
+/* ==========================
+========== + btns + =========
+=============================*/
+main .btns-home {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+flex-wrap: wrap;
+}
+main .btns-home button {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 2px;
+
+}
+main .btns-home button.new-art {
+  background-color: blue;
+  border: none;
+}
+main .btns-home button.old-art {
+  background-color: rgb(22, 204, 204);
+  border: none;
+}
+main .btns-home select.tasks {
+  border: none;
+  background-color: #aaa;
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  padding-left: 5px;
+}
+main .btns-home select.tasks option:hover {
+  background-color: #ff1818;
+}
+
+
+
+
+/* ==========================
+========== + articles + =========
+=============================*/
+
+main .all-articles {
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+main .all-articles h1{
+color:#008080 ;
+animation: none;
+}
+main .all-articles > a{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main .all-articles article {
+  width: 325px;
+  padding: 10px;
+  padding-left: 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+transition: .3s;
+cursor: pointer;
+height: 200px;
+position: relative;
+
+
+}
+main .all-articles article:hover{
+ border-left: 15px solid #008080;
+ border-color: #008080;
+ transition: .3s;
+}
+main .all-articles article h3{
+  color: #000;
+}
+
+main .all-articles article ul li {
+  list-style-type: circle;
+  list-style-position: inside;
+  font-size: 1.1rem;
+  text-align: start;
+  color: #000;
+}
+main .all-articles article p {
+  position: absolute;
+  font-size: 0.8rem;
+  text-align: right;
+  height: 30px;
+  color: rgb(22, 204, 204);
+  bottom: 12px;
+  right: 10px;
+}
+
+main .all-articles article p .date{
+  color: rgb(22, 204, 204);
+}
+
+
+
+/* ==========================
+========== + add new task + =========
+=============================*/
+main .add button {
+  background-color: aqua;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 2px;
+  background-color: rgb(22, 204, 204);
+  border: none;
+  margin-bottom: 30px;
+  
+}
+
+/* ==========================
+========== + modal + =========
+=============================*/
+
+.modal h3{
+  font-size: 25px;
+margin: 10px 0;
+}
+.modal .addeers-input ,.modal .details-input {
+  width: 200px;
+  height: 25px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  color: #000;
+}
+.modal .data-details{
+  align-items: baseline;
+  gap: 5px;
+}
+.modal .data-details button{
+  width: 50px;
+  height: 35px;
+  padding: 2px;
+}
+.modal ul li{
+  margin: 5px 0;
+  list-style: circle;
+}
+
+
+
+.toast{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background-color: #008080;
+  padding: 10px;
+  border-right:10px solid rgb(18, 192, 204) ;
+  border-radius: 5px;
+  position: fixed;
+  top: 160px;
+  transition: 1.1s;
+  z-index: 9999;
+
+}
+.toast .fa-circle-check{
+  color: rgb(77, 240, 77);
+  align-self:center ;
+  margin-top:10px;
+}
+
+
+@media(width<450px){
+  .toast{
+    top: 240px;
+  }
+}
+
+
+
+
+
+
+/* ==========================
+========== + Dark + =========
+=============================*/
+.Dark main .btns-home button.new-art {
+  background-color: #c55b92;
+  border: none;
+}
+.Dark main .btns-home button.old-art,.Dark main .add button{
+  background-color: #ca1271;
+  border: none;
+}
+.Dark main .all-articles article{
+  border-color: #fff;
+}
+.Dark main .all-articles article h3{
+  color: #fff;
+}
+
+.Dark main .all-articles article ul li{
+  color: #fff;
+}
+.Dark main .all-articles article p .date{
+  color: #9e4673;
+}
+.Dark main .all-articles article:hover{
+  border-color: #9e4673;
+}
+.Dark .toast{
+  background-color: #fff;
+  border-color: #9e4673;
+  color: #000;
+  
+}
+.Dark .toast div{
+  color: #000;
+}
+.Dark main .all-articles h1{
+  color: #9e4673;
+}
+.active{
+  opacity: 1;
+}
+.notactive{
+  opacity: .5;
+}
